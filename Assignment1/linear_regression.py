@@ -29,6 +29,11 @@ class LinearRegression():
         self.weights -= self.learning_rate * grad_w  
         self.bias -= self.learning_rate * grad_b  
 
+    def predict_proba(self, x):
+        lin_model = np.matmul(x, self.weights) + self.bias
+        y_pred = self.sigmoid_function(lin_model)
+        return y_pred
+
     def fit(self, x, y):
     # Initialize weights and bias
         self.weights = np.zeros(x.shape[1])
