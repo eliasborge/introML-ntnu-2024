@@ -3,6 +3,8 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 class LinearRegression():
     
+    #sources == forelesningsnotater
+    
     def __init__(self, learning_rate=0.001, epochs=1000):
         self.learning_rate = learning_rate
         self.epochs = epochs
