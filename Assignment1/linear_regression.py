@@ -2,7 +2,9 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import r2_score
 class LinearRegression():
-    
+
+
+    '''
     def __init__(self, learning_rate=0.001, n_iterations=5000):
         self.learning_rate = learning_rate
         self.n_iterations = n_iterations
@@ -23,3 +25,4 @@ class LinearRegression():
 
     def predict(self, X):
         return self.b + self.a * X
+    '''
